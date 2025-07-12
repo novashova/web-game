@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #d8c4c4;
+}
+
+.game-board {
+  justify-content: center;
+  min-height: 300px;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border: 2px solid #fff200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.2s;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card.matched {
+  background-color: #4ebe68;
+  border-color: #0a611e;
+  pointer-events: none;
+}
+
+.card.flipped {
+  background-color: #c7c9cc;
+  transform: scale(1.05);
+}
