@@ -157,4 +157,6 @@ $(document).ready(() => {
   $('#resetBtn').on('click', () => {
     resetGame();
   });
+
+  // easter egg!
 });
